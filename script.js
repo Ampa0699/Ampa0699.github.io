@@ -107,3 +107,21 @@ scrollBottom.forEach((el) => observer.observe(el));
 
 const scrollTop = document.querySelectorAll(".scroll-top");
 scrollTop.forEach((el) => observer.observe(el));
+
+// switcher
+const toggleSwitch = document.querySelector(".toggle-switch");
+const sunIcon = document.querySelector(".bxs-sun");
+const moonIcon = document.querySelector(".bxs-moon");
+
+moonIcon.style.display = "none";
+
+toggleSwitch.addEventListener("click", function () {
+  document.body.classList.toggle("switch");
+  if (document.body.classList.contains("switch")) {
+    sunIcon.style.display = "none";
+    moonIcon.style.display = "inline-block";
+  } else {
+    moonIcon.style.display = "none";
+    sunIcon.style.display = "inline-block";
+  }
+});
