@@ -119,7 +119,8 @@ toggleSwitch.addEventListener("click", function () {
   document.body.classList.toggle("switch");
   if (document.body.classList.contains("switch")) {
     sunIcon.style.display = "none";
-    moonIcon.style.display = "inline-block";
+    // moonIcon.style.display = "inline-block";
+    moonIcon.style.display = "block";
   } else {
     moonIcon.style.display = "none";
     sunIcon.style.display = "inline-block";
