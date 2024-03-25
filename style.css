@@ -102,6 +102,7 @@ span {
 section {
   padding: 100px 10%;
 }
+
 /* home section */
 .home {
   /* min-height: 100vh; */
@@ -333,12 +334,14 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* flex-direction: column; */
   grid-gap: 2em;
   background: var(--secon-bg-color);
 }
 .about .img-about {
   text-align: center;
   position: relative;
+  background: red;
 }
 .about .img-about img {
   max-width: 400px;
@@ -395,7 +398,8 @@ section {
   font-size: 1rem;
   font-weight: 600;
 }
-/* background css */
+
+/* education background css */
 .education-row {
   display: flex;
   flex-wrap: wrap;
@@ -451,18 +455,18 @@ section {
   width: 100%;
 }
 .education-content .content .year {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: var(--hover-color);
   padding-bottom: 0.5rem;
 }
 .education-content .content .year i {
   padding-right: 0.5rem;
 }
-.education-content .content h3 {
-  font-size: 1.3rem;
+.education-content .content h2 {
+  font-size: 1rem;
 }
 .education-content .content p {
-  font-size: 1rem;
+  font-size: 0.8rem;
   padding-top: 0.5rem;
 }
 
