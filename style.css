@@ -934,7 +934,7 @@ footer a i {
     font-size: 5px;
   }
 }
-@media (max-width: 720px) {
+/* @media (max-width: 720px) {
   .home {
     width: 100%;
   }
@@ -956,7 +956,7 @@ footer a i {
   .contact {
     width: 100%;
   }
-}
+} */
 @media (max-width: 420px) {
   html {
     font-size: 80%;
