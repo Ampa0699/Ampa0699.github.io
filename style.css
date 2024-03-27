@@ -905,7 +905,7 @@ footer a i {
   }
   .about {
     flex-direction: column-reverse;
-    width: 100%;
+    background: red;
   }
   .skill-main {
     grid-template-columns: 1fr;
@@ -948,8 +948,5 @@ footer a i {
     position: absolute;
     right: 1px;
     font-size: 5px;
-  }
-  .about {
-    width: 100%;
   }
 }
