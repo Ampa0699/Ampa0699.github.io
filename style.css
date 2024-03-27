@@ -330,8 +330,6 @@ section {
 }
 /* about section */
 .about {
-  height: 100%;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -341,7 +339,6 @@ section {
 .about .img-about {
   text-align: center;
   position: relative;
-  background: red;
 }
 .about .img-about img {
   max-width: 400px;
@@ -400,10 +397,7 @@ section {
 }
 
 /* education background css */
-.education {
-  height: 100%;
-  width: 100%;
-}
+
 .education-row {
   display: flex;
   flex-wrap: wrap;
@@ -478,8 +472,6 @@ section {
 /* new */
 .services {
   background: var(--secon-bg-color);
-  height: 100%;
-  width: 100%;
 }
 /* old */
 .main-text {
@@ -548,13 +540,6 @@ section {
 }
 
 /* skill left section */
-/* .skills {
-  background: var(--secon-bg-color);
-} */
-.skill {
-  height: 100%;
-  width: 100%;
-}
 .skill-main {
   width: 100%;
   display: grid;
@@ -671,14 +656,10 @@ section {
 /* project */
 .project {
   background: var(--secon-bg-color);
-  height: 100%;
-  width: 100%;
 }
 /* contact css */
 .contact {
   background: var(--bg-color);
-  height: 100%;
-  width: 100%;
 }
 .contact form {
   text-align: center;
@@ -690,7 +671,6 @@ section {
 .contact form textarea {
   width: 100%;
   color: var(--text-color);
-  /* background: var(--bg-color); */
   background: var(--secon-bg-color);
   margin-bottom: 0.8rem;
   border: none;
@@ -879,11 +859,6 @@ footer a i {
 }
 /* the section is new */
 @media (max-width: 768px) {
-  section {
-    width: 100vw;
-    padding: 0;
-    margin: 0;
-  }
   #menu-icon {
     display: block;
     transition: all 0.4 ease;
