@@ -877,9 +877,12 @@ footer a i {
     margin-top: 2rem;
   }
 }
+/* the section is new */
 @media (max-width: 768px) {
   section {
     width: 100vw;
+    padding: 0;
+    margin: 0;
   }
   #menu-icon {
     display: block;
