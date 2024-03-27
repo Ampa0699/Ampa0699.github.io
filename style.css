@@ -898,7 +898,7 @@ footer a i {
   }
   .about {
     flex-direction: column-reverse;
-    width: fit-content;
+    width: 100dvw;
   }
   .skill-main {
     grid-template-columns: 1fr;
