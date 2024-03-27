@@ -99,9 +99,9 @@ span {
   color: var(--second-bg-color);
   display: none;
 }
-/* section {
+section {
   padding: 100px 10%;
-} */
+}
 
 /* home section */
 .home {
