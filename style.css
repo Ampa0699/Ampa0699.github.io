@@ -334,7 +334,7 @@ section {
   justify-content: center;
   align-items: center;
   grid-gap: 2em;
-  background: var(bs);
+  background: var(--secon-bg-color);
 }
 .about .img-about {
   text-align: center;
