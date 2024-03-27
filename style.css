@@ -901,6 +901,9 @@ footer a i {
   }
   .home {
     grid-template-columns: 1fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .home-image {
     margin-bottom: 5rem;
