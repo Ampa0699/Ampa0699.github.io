@@ -901,9 +901,6 @@ footer a i {
   }
   .home {
     grid-template-columns: 1fr;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   .home-image {
     margin-bottom: 5rem;
@@ -929,6 +926,29 @@ footer a i {
     position: absolute;
     right: 10px;
     font-size: 5px;
+  }
+}
+@media (max-width: 720px) {
+  .home {
+    width: 100%;
+  }
+  .about {
+    width: 100%;
+  }
+  .education {
+    width: 100%;
+  }
+  .services {
+    width: 100%;
+  }
+  .skill {
+    width: 100%;
+  }
+  .project {
+    width: 100%;
+  }
+  .contact {
+    width: 100%;
   }
 }
 @media (max-width: 420px) {
