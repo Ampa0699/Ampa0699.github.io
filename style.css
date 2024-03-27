@@ -334,7 +334,7 @@ section {
   justify-content: center;
   align-items: center;
   grid-gap: 2em;
-  background: var(--secon-bg-color);
+  background: var(bs);
 }
 .about .img-about {
   text-align: center;
@@ -899,7 +899,6 @@ footer a i {
   }
   .about {
     flex-direction: column-reverse;
-    width: 100dvw;
   }
   .skill-main {
     grid-template-columns: 1fr;
