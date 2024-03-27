@@ -330,12 +330,13 @@ section {
 }
 /* about section */
 .about {
+  height: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   grid-gap: 2em;
   background: var(--secon-bg-color);
-  width: 100%;
 }
 .about .img-about {
   text-align: center;
@@ -400,6 +401,7 @@ section {
 
 /* education background css */
 .education {
+  height: 100%;
   width: 100%;
 }
 .education-row {
@@ -476,6 +478,7 @@ section {
 /* new */
 .services {
   background: var(--secon-bg-color);
+  height: 100%;
   width: 100%;
 }
 /* old */
@@ -549,6 +552,7 @@ section {
   background: var(--secon-bg-color);
 } */
 .skill {
+  height: 100%;
   width: 100%;
 }
 .skill-main {
@@ -667,11 +671,13 @@ section {
 /* project */
 .project {
   background: var(--secon-bg-color);
+  height: 100%;
   width: 100%;
 }
 /* contact css */
 .contact {
   background: var(--bg-color);
+  height: 100%;
   width: 100%;
 }
 .contact form {
