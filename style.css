@@ -335,6 +335,7 @@ section {
   align-items: center;
   grid-gap: 2em;
   /* background: var(--secon-bg-color); */
+  background: red;
 }
 .about .img-about {
   text-align: center;
