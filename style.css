@@ -39,7 +39,7 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
-  position: fixed;
+  position: absolute;
 }
 header {
   position: fixed;
@@ -921,7 +921,7 @@ footer a i {
   }
   .toggle-switch {
     position: absolute;
-    right: 10px;
+    right: 1px;
     font-size: 5px;
   }
 }
