@@ -295,7 +295,7 @@ section {
   position: absolute;
   font-size: 25px;
   top: 50%;
-  right: 5rem;
+  right: 10rem;
   transform: translate(-50%, -50%);
   cursor: pointer;
 }
@@ -315,9 +315,9 @@ section {
 /* switcher color */
 .switch {
   --text-color: black;
-  --hover-color: red;
+  --hover-color: #ff521b;
   --bg-color: #fff;
-  --secon-bg-color: lightblue;
+  --secon-bg-color: #dcd8d0;
   --big-font: 2.5rem;
   --normal-font: 2rem;
   --neon-box-shadow: 0 0 0.5rem red;
@@ -619,7 +619,7 @@ section {
 }
 .box .text {
   text-align: center;
-  color: #fff;
+  color: var(--text-color);
   font-size: 1rem;
 }
 .box .text big {
@@ -915,29 +915,7 @@ footer a i {
     font-size: 5px;
   }
 }
-/* @media (max-width: 720px) {
-  .home {
-    width: 100%;
-  }
-  .about {
-    width: 100%;
-  }
-  .education {
-    width: 100%;
-  }
-  .services {
-    width: 100%;
-  }
-  .skill {
-    width: 100%;
-  }
-  .project {
-    width: 100%;
-  }
-  .contact {
-    width: 100%;
-  }
-} */
+
 @media (max-width: 420px) {
   html {
     font-size: 80%;
