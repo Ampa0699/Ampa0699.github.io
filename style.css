@@ -280,15 +280,11 @@ section {
 }
 
 /* toggle icon */
-.toggle-switch {
-  position: relative;
-}
+
 .toggle-switch .bx {
-  position: absolute;
+  position: relative;
+  right: 200px;
   font-size: 25px;
-  top: 50%;
-  right: 10rem;
-  transform: translate(-50%, -50%);
   cursor: pointer;
 }
 
@@ -919,10 +915,9 @@ footer a i {
   footer p {
     font-size: 0.9rem;
   }
-  .toggle-switch {
-    position: absolute;
-    right: 1px;
-    font-size: 5px;
+  .toggle-switch .bx {
+    position: relative;
+    right: -100px;
   }
 }
 
@@ -948,9 +943,8 @@ footer a i {
   .img-about p {
     font-size: 1rem;
   }
-  .toggle-switch {
-    position: absolute;
-    right: 1px;
-    font-size: 5px;
+  .toggle-switch .bx {
+    position: relative;
+    left: -30px;
   }
 }
