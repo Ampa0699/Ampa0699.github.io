@@ -267,10 +267,11 @@ section {
 
 .img-box {
   text-align: center;
+  filter: drop-shadow(1px 1px 20px var(--hover-color));
 }
 .img-box img {
   width: 100%;
-  max-width: 350px;
+  max-width: 33vw;
   height: auto;
 }
 .img-box img:hover {
