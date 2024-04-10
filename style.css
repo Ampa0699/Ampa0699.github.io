@@ -864,11 +864,12 @@ footer a i {
 }
 /* the section is new */
 @media (max-width: 768px) {
-  body {
-    position: absolute;
-  }
   section {
-    padding: 0;
+    padding: 10px 3%;
+    width: 80%;
+  }
+  header {
+    margin-left: 10px;
   }
   #menu-icon {
     display: block;
@@ -927,12 +928,6 @@ footer a i {
 }
 
 @media (max-width: 420px) {
-  body {
-    position: absolute;
-  }
-  section {
-    padding: 0;
-  }
   html {
     font-size: 80%;
   }
