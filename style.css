@@ -102,7 +102,6 @@ span {
 }
 section {
   padding: 100px 10%;
-  width: 100vw;
 }
 
 /* home section */
@@ -866,9 +865,6 @@ footer a i {
 }
 /* the section is new */
 @media (max-width: 768px) {
-  section {
-    width: 100%;
-  }
   #menu-icon {
     display: block;
     transition: all 0.4 ease;
@@ -926,9 +922,6 @@ footer a i {
 }
 
 @media (max-width: 420px) {
-  section {
-    width: 100%;
-  }
   html {
     font-size: 80%;
   }
