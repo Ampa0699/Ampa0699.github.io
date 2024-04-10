@@ -288,6 +288,7 @@ section {
 }
 
 .bxs-sun {
+  /* display: none; */
   display: block;
   color: #fff;
 }
