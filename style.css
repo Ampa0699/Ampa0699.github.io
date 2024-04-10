@@ -288,7 +288,6 @@ section {
 }
 
 .bxs-sun {
-  /* display: none; */
   display: block;
   color: #fff;
 }
@@ -864,12 +863,6 @@ footer a i {
 }
 /* the section is new */
 @media (max-width: 768px) {
-  section {
-    width: 100%;
-  }
-  header {
-    margin-left: 10px;
-  }
   #menu-icon {
     display: block;
     transition: all 0.4 ease;
