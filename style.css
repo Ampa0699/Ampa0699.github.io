@@ -102,6 +102,7 @@ span {
 }
 section {
   padding: 100px 10%;
+  width: 100vw;
 }
 
 /* home section */
