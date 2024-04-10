@@ -865,8 +865,7 @@ footer a i {
 /* the section is new */
 @media (max-width: 768px) {
   section {
-    padding: 10px 3%;
-    width: 80%;
+    width: 100%;
   }
   header {
     margin-left: 10px;
