@@ -622,6 +622,7 @@ body.dark {
   #menu-icon {
     display: block;
   }
+
   .navbar {
     position: absolute;
     top: 100%;
@@ -727,6 +728,9 @@ body.dark {
 @media (max-width: 365px) {
   .home-img img {
     width: 90vw;
+  }
+  .portfolio-layer h4 {
+    font-size: 2rem;
   }
   .about-img img {
     width: 90vw;
