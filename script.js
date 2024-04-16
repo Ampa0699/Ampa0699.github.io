@@ -1,128 +1,62 @@
-let words = document.querySelectorAll(".word");
-words.forEach((word) => {
-  let letters = word.textContent.split("");
-  word.textContent = "";
-  letters.forEach((letter) => {
-    let span = document.createElement("span");
-    span.textContent = letter;
-    span.className = "letter";
-    word.append(span);
-  });
-});
+// scroll section active link start
+let sections = document.querySelectorAll("section");
+let navLink = document.querySelectorAll("header nav a");
 
-let currentWordIndex = 0;
-let maxWordIndex = words.length - 1;
-words[currentWordIndex].style.opacity = "1";
+window.onscroll = () => {
+  sections.forEach((sec) => {
+    let top = window.scrollY;
+    let offset = sec.offsetTop - 150;
+    let height = sec.offsetHeight;
+    let id = sec.getAttribute("id");
 
-let changeText = () => {
-  let currentWord = words[currentWordIndex];
-  let nextWord =
-    currentWordIndex === maxWordIndex ? words[0] : words[currentWordIndex + 1];
-
-  Array.from(currentWord.children).forEach((letter, i) => {
-    setTimeout(() => {
-      letter.className = "letter out";
-    }, i * 80);
+    if (top >= offset && top < offset + height) {
+      navLink.forEach((links) => {
+        links.classList.remove("active");
+        document
+          .querySelector("header nav a[href*=" + id + "]")
+          .classList.add("active");
+      });
+    }
   });
 
-  nextWord.style.opacity = "1";
-  Array.from(nextWord.children).forEach((letter, i) => {
-    letter.className = "letter behind";
-    setTimeout(() => {
-      letter.className = "letter in";
-    }, 340 + i * 80);
-  });
+  // sticky navbar start
+  let header = document.querySelector("header");
+  header.classList.toggle("sticky", window.scrollY > 100);
+  // sticky navbar end
 
-  currentWordIndex =
-    currentWordIndex === maxWordIndex ? 0 : currentWordIndex + 1;
+  // remove toggle icon navbar when click navbar link scroll start
+  menuIcon.classList.remove("bx-x");
+  navbar.classList.remove("active");
+  // remove toggle icon navbar when click navbar link scroll end
 };
+// scroll section active link end
 
-changeText();
-setInterval(changeText, 3000);
-
-// circle skill
-const circles = document.querySelectorAll(".circle");
-circles.forEach((elem) => {
-  var dots = elem.getAttribute("data-dots");
-  var marked = elem.getAttribute("data-percent");
-  var percent = Math.floor((dots * marked) / 100);
-  var points = "";
-  var rotate = 360 / dots;
-
-  for (let i = 0; i < dots; i++) {
-    points += `<div class="points" style="--i: ${i}; --rot:${rotate}deg"></div>`;
-  }
-  elem.innerHTML = points;
-  const pointsMarked = elem.querySelectorAll(".points");
-  for (let i = 0; i < percent; i++) {
-    pointsMarked[i].classList.add("marked");
-  }
-});
-
-// active menu
-let menuLi = document.querySelectorAll("header ul li a");
-let section = document.querySelectorAll("section");
-
-function activeMenu() {
-  let len = section.length;
-  while (--len && window.scrollY + 97 < section[len].offsetTop) {}
-  menuLi.forEach((sec) => sec.classList.remove("active"));
-  menuLi[len].classList.add("active");
-}
-activeMenu();
-window.addEventListener("scroll", activeMenu);
-
-// sticky navbar
-const header = document.querySelector("header");
-window.addEventListener("scroll", function () {
-  header.classList.toggle("sticky", window.scrollY > 50);
-});
-// toggle icon navbar responsive
+// toggle menu icon navbar start
 let menuIcon = document.querySelector("#menu-icon");
-let navlist = document.querySelector(".navlist");
+let navbar = document.querySelector(".navbar");
 
 menuIcon.onclick = () => {
   menuIcon.classList.toggle("bx-x");
-  navlist.classList.toggle("open");
+  navbar.classList.toggle("active");
 };
-window.onscroll = () => {
-  menuIcon.classList.remove("bx-x");
-  navlist.classList.remove("open");
-};
-// parrallax
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("show-items");
-    } else {
-      entry.target.classList.remove("show-items");
-    }
-  });
+// toggle menu icon navbar end
+
+// scroll reveal start
+ScrollReveal({
+  reset: true,
+  distance: "80px",
+  duration: 2000,
+  delay: 200,
 });
-const scrollScale = document.querySelectorAll(".scroll-scale");
-scrollScale.forEach((el) => observer.observe(el));
+ScrollReveal().reveal(".home-content,.heading", {
+  origin: "top",
+});
 
-const scrollBottom = document.querySelectorAll(".scroll-bottom");
-scrollBottom.forEach((el) => observer.observe(el));
-
-const scrollTop = document.querySelectorAll(".scroll-top");
-scrollTop.forEach((el) => observer.observe(el));
-
-// switcher
-const toggleSwitch = document.querySelector(".toggle-switch");
-const sunIcon = document.querySelector(".bxs-sun");
-const moonIcon = document.querySelector(".bxs-moon");
-
-moonIcon.style.display = "none";
-
-toggleSwitch.addEventListener("click", function () {
-  document.body.classList.toggle("switch");
-  if (document.body.classList.contains("switch")) {
-    sunIcon.style.display = "none";
-    // moonIcon.style.display = "inline-block";
-    moonIcon.style.display = "block";
-  } else {
-    moonIcon.style.display = "none";
-    sunIcon.style.display = "inline-block";
-  }
+// scroll reveal end
+const typed = new Typed(".multiple-text", {
+  strings: ["QA Tester", "Front-End Developer"],
+  typeSpeed: 100,
+  backSpeed: 100,
+  backDelay: 100,
+  loop: true,
 });
